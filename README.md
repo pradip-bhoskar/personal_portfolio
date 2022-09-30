@@ -1,3 +1,41 @@
+# framer-motion 
+    used to give motion effects
+    yarn add framer-motion@6.3.4
+
+# swiper 
+    used to add slider
+    yarn add swiper
+
+# emailjs 
+    used to send email
+    yarn add emailjs
+
+
+# react-scroll 
+    used to scroll particular component
+    yarn add react-scroll
+
+# iconscout
+    used for social icons
+    yarn add @iconscout/react-unicons
+
+# emailjs/browser
+
+    yarn add @emailjs/browser
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

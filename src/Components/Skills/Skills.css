@@ -1,0 +1,93 @@
+.skills {
+    height: 90vh;
+    display: flex;
+    padding: 0 3rem 0 3rem;
+    margin-top: 4rem;
+
+}
+
+.skills_right {
+
+    position: relative;
+}
+
+.skills_main_circle {
+    background: var(--orange);
+    left: 9rem;
+    position: relative;
+    width: 18rem;
+    height: 18rem;
+    border-radius: 100%;
+    box-shadow: var(--boxShadow);
+    top: 2rem;
+}
+
+.skills_main_circle>* {
+    position: absolute;
+}
+
+.skills_main_circle>:nth-child(1) {
+    top: -3rem;
+    left: 6rem;
+}
+
+.skills_main_circle>:nth-child(2) {
+    top: 5rem;
+    left: -3rem;
+}
+
+.skills_main_circle>:nth-child(3) {
+    top: 5rem;
+    left: 6rem;
+}
+
+.skills_main_circle>:nth-child(4) {
+    top: 5rem;
+    left: 15rem;
+}
+
+.skills_main_circle>:nth-child(5) {
+    top: 13rem;
+    left: 6rem;
+}
+
+.skills_secondary_circle {
+    background: none;
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    border-radius: 100%;
+    border: 5px solid #ebebeb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--smboxShadow);
+    background: white;
+
+}
+
+.skills_secondary_circle>img {
+
+    transform: scale(0.45);
+}
+
+.backCircle {
+
+    position: absolute;
+    height: 13rem;
+    width: 13rem;
+    border-radius: 100%;
+    z-index: -1;
+}
+
+.blueCircle {
+    background: #1949B8;
+    left: 18rem;
+    top: 0rem;
+}
+
+.yellowCircle {
+    background: #F5C32C;
+    left: 18rem;
+    top: 8rem;
+}

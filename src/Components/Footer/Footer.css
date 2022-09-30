@@ -1,0 +1,29 @@
+.footer {
+    display: flex;
+    align-items: center;
+    margin: -3.5rem -3.5rem;
+    position: relative;
+    margin-top: -7rem;
+}
+
+.footer img {
+    width: 100%;
+}
+
+.footer_content {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 4rem;
+    gap: 2rem;
+    color: white;
+}
+
+.footer_icons {
+    display: flex;
+    gap: 2rem;
+    transform: scale(0.7);
+    cursor: pointer;
+}
