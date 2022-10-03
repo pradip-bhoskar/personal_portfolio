@@ -46,12 +46,13 @@
     flex: 2;
 }
 
-/* @media screen and (max-width: 480px) {
-  
-    .navbar_list{
+@media screen and (max-width: 480px) {
+
+    .navbar_list {
         display: none;
     }
-    .navbar_button{
+
+    .navbar_button {
         display: none;
     }
-} */
+}

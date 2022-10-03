@@ -5,6 +5,7 @@ import Java_Hackerrank from '../../img/Certificates/java_certificate_hackerrank.
 import HTML_Sololearn from '../../img/Certificates/html_css_sololearn.jpg';
 import SQL_Sololearn from '../../img/Certificates/sql_certificate_sololearn.png';
 import Degree_Certificate from '../../img/Certificates/degree_certificate.jpg';
+import TCS_iON_Certificate from '../../img/Certificates/TCS_iON_certificate.jpg';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -29,10 +30,16 @@ const Certificates = () => {
             url: "https://www.sololearn.com/Certificate/CT-GYYBNTW1/jpg"
         },
         {
+            name: "TCS iON Certificate",
+            img: TCS_iON_Certificate,
+            url: "https://drive.google.com/file/d/1V0r6qZdf2CnSqMjSeCCheNrMWoTzJq1E/view?usp=sharing"
+        },
+        {
             name: "SQL Certificate",
             img: SQL_Sololearn,
             url: "https://www.sololearn.com/certificates/CT-HIOCMTJX"
-        }, {
+        }, 
+        {
             name: "Degree Certificate",
             img: Degree_Certificate,
             url: "https://drive.google.com/file/d/18r8p3ryP6bdvhPa30k_aM7WMYOf66d2H/view?usp=sharing"

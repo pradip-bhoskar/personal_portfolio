@@ -10,11 +10,18 @@ import aptitudekatta from '../../img/project_images/aptitudekatta_project.png'
 import 'swiper/css'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
+import { useContext } from 'react'
+import { themeContext } from '../../Context'
+
 const Projects = () => {
+
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
+
   return (
     <div className="projects" id='Projects'>
 
-      <span>Recent Projects</span>
+      <span style={darkMode ? { color: "white" } : {}}>Recent Projects</span>
       <span>Portfolio</span>
 
       <Swiper spaceBetween={30} slidesPerView={3} grabCursor={true} className='projects_slider'>

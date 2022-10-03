@@ -111,9 +111,77 @@
     filter: blur(62px);
 }
 
-/* 
+
 @media screen and (max-width: 480px) {
-  .intro{
-    flex-direction: column;
-  }
-} */
+    .intro {
+        display: flex;
+        margin-top: 1rem;
+        height: 66vh;
+        padding: 0.5rem;
+    }
+
+    .intro_left {
+        display: flex;
+        position: relative;
+        flex: 2;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .intro_name>:nth-child(1) {
+        font-size: 2rem;
+    }
+
+    .intro_name>:nth-child(2) {
+        font-size: 2rem;
+    }
+
+    .intro_name>:nth-child(3) {
+        font-size: 12px;
+    }
+
+    .intro_icons {
+        margin-top: 1rem;
+    }
+
+    .intro_icons>* {
+        transform: scale(0.3);
+    }
+
+    .intro_right>:nth-child(1) {
+        transform: scale(0.7) rotate(6deg);
+        z-index: -11;
+        opacity: 0.3;
+        left: -200%;
+        top: -20%;
+    }
+
+    .intro_right>:nth-child(2) {
+        transform: scale(0.5) rotate(6deg);
+        left: -300%;
+        top: -30%;
+        opacity: 0.5;
+        z-index: -10;
+    }
+
+    .intro_right>:nth-child(3) {
+        transform: scale(1) rotate(6deg);
+        left: -50%;
+        top: 0%;
+        opacity: 0.8;
+        z-index: 0;
+    }
+
+    .intro_right>:nth-child(4) {
+        display: none;
+    }
+
+    .intro_right>:nth-child(5) {
+        display: none;
+    }
+
+    .blur {
+        z-index: -9;
+    }
+
+}

@@ -12,6 +12,12 @@ import Card from '../Card/Card '
 import { useContext } from 'react'
 import { themeContext } from '../../Context'
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+
+import { Pagination } from 'swiper';
+import 'swiper/css/pagination';
+
 import { motion } from 'framer-motion';
 
 const Websites = () => {
@@ -37,12 +43,11 @@ const Websites = () => {
             </div>
             <div className="websites_right">
                 <motion.div
+
                     initial={{ left: '20rem' }}
                     whileInView={{ left: '14rem' }}
                     transition={transition}
-                    style={{
-                        left: '14rem'
-                    }}>
+                >
                     <Card
                         emoji={HeartEmoji}
                         heading={'Aptitude Katta'}
@@ -55,11 +60,7 @@ const Websites = () => {
                     initial={{ left: '-10rem' }}
                     whileInView={{ left: '-4rem' }}
                     transition={transition}
-
-                    style={{
-                        left: '-4rem',
-                        top: '12rem'
-                    }}>
+                >
                     <Card
                         emoji={Glasses}
                         heading={'Social Katta'}
@@ -73,9 +74,7 @@ const Websites = () => {
                     initial={{ left: '18rem' }}
                     whileInView={{ left: '12rem' }}
                     transition={transition}
-                    style={{
-                        left: '12rem', top: '19rem'
-                    }}>
+                >
                     <Card
                         emoji={Humble}
                         heading={'Personal Porfolio'}
@@ -86,6 +85,40 @@ const Websites = () => {
                 </motion.div>
                 <div className="websites_blur1 blur" style={{ background: "var(--purple)" }}></div>
             </div>
+
+            <Swiper
+                modules={[Pagination]}
+              
+                slidesPerView={1}
+                pagination={{ clickable: true }}
+                grabCursor={true}
+                className='websites_slider'
+            >
+                <SwiperSlide>
+                    <Card
+                        emoji={Glasses}
+                        heading={'Social Katta'}
+                        detail={"wordpress"}
+                        url={"https://socialkatta.com/"}
+                    />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Card
+                        emoji={HeartEmoji}
+                        heading={'Aptitude Katta'}
+                        detail={"wordpress"}
+                        url={"https://aptitudekatta.com/"}
+                    />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Card
+                        emoji={Humble}
+                        heading={'Personal Portfolio'}
+                        detail={"JavaScript, React JS"}
+                        url={"https://www.pradipbhoskar.com/"}
+                    />
+                </SwiperSlide>
+            </Swiper>
         </div >
     )
 }

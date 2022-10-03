@@ -101,3 +101,36 @@
 
     background: var(--orange);
 }
+
+
+
+@media screen and (max-width: 480px) {
+
+    .certificates {
+        padding: 0.5rem;
+        height: 70vh;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .certificates_heading>* {
+        font-size: 1.5rem;
+    }
+
+    .certificates_description {
+        font-size: 14px;
+        color: var(--gray);
+        gap: 2rem;
+        height: 20%;
+    }
+
+    .certificates_description span {
+        font-size: 14px;
+    }
+
+    .certificates_description span:nth-of-type(2)>a {
+        font-size: 14px;
+    }
+
+
+}

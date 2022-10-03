@@ -3,6 +3,9 @@ import './Contact.css';
 
 import emailjs from '@emailjs/browser';
 
+import { useContext } from 'react'
+import { themeContext } from '../../Context'
+
 import { useState } from 'react';
 
 const Contact = () => {
@@ -22,12 +25,14 @@ const Contact = () => {
             });
     };
 
+    const theme = useContext(themeContext);
+    const darkMode = theme.state.darkMode;
 
     return (
         <div className="contact" id='Contact'>
             <div className="contact_left">
 
-                <span>Get in touch </span>
+                <span style={darkMode ? { color: "white" } : {}}>Get in touch </span>
                 <span>Contact me</span>
                 <div className="blur contact_blur1" style={{ background: "#ABF1FF94" }}>
                 </div>

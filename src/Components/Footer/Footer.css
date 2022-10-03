@@ -27,3 +27,50 @@
     transform: scale(0.7);
     cursor: pointer;
 }
+
+
+
+@media screen and (max-width: 480px) {
+
+    .footer {
+        display: flex;
+        height: 40vh;
+        align-items: center;
+        margin: -3.5rem -3.5rem;
+        position: relative;
+        margin-top: 1rem;
+    }
+
+    .footer img {
+        width: 100%;
+    }
+
+    .footer_content>* {
+        position: absolute;
+    }
+
+    .footer_content>:nth-child(1) {
+        display: none;
+    }
+
+    .footer_content>:nth-child(2) {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(0.5);
+
+    }
+
+    .footer_content>:nth-child(3) {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, 200%);
+        font-size: 12px;
+        color: black;
+    }
+
+    .footer_icons {
+        gap: 1rem;
+    }
+
+
+}

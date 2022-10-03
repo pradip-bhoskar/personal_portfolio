@@ -29,7 +29,7 @@ const Intro = () => {
                 <div className="intro_name">
                     <span style={darkMode ? { color: "white" } : {}} >Hy! I am </span>
                     <span>Pradip Bhoskar</span>
-                    <span>I am graduate in Engineering having good programming skills & additional skills in computer related stuffs. Currently I am serving as a Freelancer after pursuing degree in Computer Science & Engineering.</span>
+                    <span style={darkMode ? { color: "white" } : {}}>I am graduate in Engineering having good programming skills & additional skills in computer related stuffs. Currently I am serving as a Freelancer after pursuing degree in Computer Science & Engineering.</span>
                 </div>
                 <a href="mailto:pradipbhoskar1997@gmail.com" >
                     <button className="intro_button button" >Hire me</button>
@@ -58,8 +58,8 @@ const Intro = () => {
                     <FloatingDiv image={Crown} txt1='Java' txt2='Developer'></FloatingDiv>
                 </motion.div>
                 <motion.div
-                    initial={{ left: '2rem' }}
-                    whileInView={{ left: '0rem' }}
+                    initial={{ left: '4rem' }}
+                    whileInView={{ left: '-2rem' }}
                     transition={transition}
 
                     style={{ top: '18rem', left: '0rem' }}>

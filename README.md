@@ -12,7 +12,7 @@
 
 
 # react-scroll 
-    used to scroll particular component
+    used to scr oll particular component
     yarn add react-scroll
 
 # iconscout

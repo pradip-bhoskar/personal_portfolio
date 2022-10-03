@@ -9,14 +9,21 @@ import wordpress_logo from "../../img/languages/wordpress_logo.png"
 
 import { motion } from 'framer-motion';
 
+import { useContext } from 'react'
+import { themeContext } from '../../Context'
+
 const Skills = () => {
+
+
+    const theme = useContext(themeContext);
+    const darkMode = theme.state.darkMode;
 
     return (
 
         <div className="skills" id='Skills'>
 
             <div className="websites_left">
-                <span>Work for All these</span>
+                <span style={darkMode ? { color: "white" } : {}}>Work for All these</span>
                 <span>Technologies</span>
                 <span>I am very passionate with my work. I love to work with people and help people. <br />
                     I am hardworking and honest who has been familiar with languages <br />
