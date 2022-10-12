@@ -1,3 +1,9 @@
+# Pradip-Portfolio
+    This repository contains the pradip's portfolio website. 
+    This website is made by using the React JS libray of javascript.
+    Live link of website: https://pradipbhoskar.com
+
+
 # framer-motion 
     used to give motion effects
     yarn add framer-motion@6.3.4
